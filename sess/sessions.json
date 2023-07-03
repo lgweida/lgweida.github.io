@@ -1,17 +1,24 @@
-[
-	{
-        "name": "Alex C",
-        "age": 2,
-        "city": "Houston"
-	},
-    {
-        "name": "John G",
-        "age": 40,
-        "city": "Washington"
-	},
-    {
-        "name": "Bala T",
-        "age": 22,
-        "city": "Bangalore"
-	}
-]
+{
+    "BeginString": "FIX.4.3",
+    "SenderCompID": "CLIENTORDER",
+    "TargetCompID": "SERVER",
+    "HeartBtInt": "30",
+    "SocketConnectPort": "3000",
+    "SocketConnectHost": "acceptor",
+    "DataDictionary": "/irisdev/app/src/fix/spec/FIX43.xml",
+    "FileStorePath": "/irisdev/app/src/fix/Sessions/",
+    "ConnectionType": "initiator",
+    "FileLogPath": "./Logs/",
+    "StartTime": "00:00:00",
+    "EndTime": "00:00:00",
+    "ReconnectInterval": "10",
+    "LogoutTimeout": "5",
+    "LogonTimeout": "30",
+    "ResetOnLogon": "Y",
+    "ResetOnLogout": "Y",
+    "ResetOnDisconnect": "Y",
+    "SendRedundantResendRequests": "Y",
+    "SocketNodelay": "N",
+    "ValidateUserDefinedFields": "N",
+    "ValidateFieldsOutOfOrder": "N"
+}
